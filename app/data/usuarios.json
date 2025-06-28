@@ -11,7 +11,7 @@
         {
             "nombre": "Juan Listero",
             "usuario": "juanlistero",
-            "contrasena": "abcd",
+            "contrasena": "Juan2025*",
             "rol": "LISTERO",
             "terminal_id": "TABLET-007",
             "fecha_activacion": "2025-05-20"
@@ -19,7 +19,7 @@
         {
             "nombre": "María Recolectora",
             "usuario": "mariareco",
-            "contrasena": "pass123",
+            "contrasena": "Maria123*",
             "rol": "RECOLECTOR",
             "terminal_id": "MOBILE-123",
             "fecha_activacion": "2025-06-10"
@@ -27,7 +27,7 @@
         {
             "nombre": "Carlos Cabeza de Banco",
             "usuario": "carloscdb",
-            "contrasena": "headbank",
+            "contrasena": "Carlos1945*",
             "rol": "CABEZA_DE_BANCO",
             "terminal_id": "LAPTOP-456",
             "fecha_activacion": "2025-06-05"
@@ -35,7 +35,7 @@
         {
             "nombre": "Laura Banco",
             "usuario": "laurabanco",
-            "contrasena": "banco321",
+            "contrasena": "Leandro2025*",
             "rol": "BANCO",
             "terminal_id": "DESKTOP-789",
             "fecha_activacion": "2025-06-15"
