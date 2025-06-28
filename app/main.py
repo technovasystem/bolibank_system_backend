@@ -16,6 +16,6 @@ app.add_middleware(
 # Incluir las rutas del login
 app.include_router(login.router)
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def inicio():
-    return {"mensaje": "BoliBank SYSTEM funcionando 😎"}
+    return {"mensaje": "BoliBank SYSTEM API activa 🚀"}
