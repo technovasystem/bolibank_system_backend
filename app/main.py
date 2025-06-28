@@ -13,9 +13,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Incluir las rutas del login
-app.include_router(login.router)
-
-@app.api_route("/", methods=["GET", "HEAD"])
+@app.api_route("/", methods=["GET", "HEAD", "OPTIONS"])
 def inicio():
     return {"mensaje": "BoliBank SYSTEM API funcionando desde cualquier IP🚀"}
+
+# Incluir las rutas del login
+app.include_router(login.router)
