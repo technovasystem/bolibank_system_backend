@@ -1,13 +1,15 @@
 from fastapi import FastAPI
-from app.routes import jugadas, usuarios, premios
+from fastapi.middleware.cors import CORSMiddleware
+from routers import login
 
-app = FastAPI(title="Bolíbank SYSTEM API")
+app = FastAPI()
 
-# Registrar rutas
-app.include_router(usuarios.router, prefix="/usuarios", tags=["Usuarios"])
-app.include_router(jugadas.router, prefix="/jugadas", tags=["Jugadas"])
-app.include_router(premios.router, prefix="/premios", tags=["Premios"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-@app.get("/")
-def read_root():
-    return {"message": "API Bolíbank SYSTEM funcionando 🔥"}
+app.include_router(login.router)
