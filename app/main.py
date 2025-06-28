@@ -18,4 +18,4 @@ app.include_router(login.router)
 
 @app.api_route("/", methods=["GET", "HEAD"])
 def inicio():
-    return {"mensaje": "BoliBank SYSTEM API activa 🚀"}
+    return {"mensaje": "BoliBank SYSTEM API funcionando desde cualquier IP🚀"}
