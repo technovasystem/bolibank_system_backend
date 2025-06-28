@@ -4,7 +4,7 @@ import json
 import socket
 from datetime import datetime
 
-router = APIRouter(prefix="/login, tags=["login"])
+router = APIRouter(prefix="/login", tags=["login"])
 
 @router.get("/")
 def login():
